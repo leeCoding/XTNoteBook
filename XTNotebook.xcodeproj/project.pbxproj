@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F4FE286B7B91B0C324874A /* Pods_XTNotebook_XTNotebookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C93910B21B115E16D53EBB /* Pods_XTNotebook_XTNotebookUITests.framework */; };
+		0A2AD80A288989C700B1E609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD809288989C700B1E609 /* AppDelegate.swift */; };
+		0A2AD80C288989C700B1E609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD80B288989C700B1E609 /* SceneDelegate.swift */; };
+		0A2AD80E288989C700B1E609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD80D288989C700B1E609 /* ViewController.swift */; };
+		0A2AD811288989C700B1E609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2AD80F288989C700B1E609 /* Main.storyboard */; };
+		0A2AD813288989C800B1E609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2AD812288989C800B1E609 /* Assets.xcassets */; };
+		0A2AD816288989C800B1E609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2AD814288989C800B1E609 /* LaunchScreen.storyboard */; };
+		0A2AD821288989C900B1E609 /* XTNotebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD820288989C900B1E609 /* XTNotebookTests.swift */; };
+		0A2AD82B288989C900B1E609 /* XTNotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD82A288989C900B1E609 /* XTNotebookUITests.swift */; };
+		0A2AD82D288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD82C288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift */; };
+		0A2B57A22892BE7D002B61B7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B57A12892BE7D002B61B7 /* BaseViewController.swift */; };
+		0A2B57A52892BEC6002B61B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B57A32892BEC6002B61B7 /* MainViewController.swift */; };
+		0A2B57A62892BEC6002B61B7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2B57A42892BEC6002B61B7 /* MainViewController.xib */; };
+		0A2B57A92892C305002B61B7 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B57A72892C305002B61B7 /* EditNoteViewController.swift */; };
+		0A2B57AA2892C305002B61B7 /* EditNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2B57A82892C305002B61B7 /* EditNoteViewController.xib */; };
+		0A37629F28A4DE1200858147 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A37629D28A4DE1200858147 /* NoteDetailViewController.swift */; };
+		0A3762A028A4DE1200858147 /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A37629E28A4DE1200858147 /* NoteDetailViewController.xib */; };
+		0AAA91E228937E64001714E0 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA91E128937E64001714E0 /* NoteModel.swift */; };
+		0AAA91E42893E344001714E0 /* WCDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA91E32893E344001714E0 /* WCDBManager.swift */; };
+		839C36353CDDBB504C8144E8 /* Pods_XTNotebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A844E8A8B3AF374EC76F03D6 /* Pods_XTNotebook.framework */; };
+		84F6C1299986E10742504D0B /* Pods_XTNotebookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1473979C37EB707AB029E9 /* Pods_XTNotebookTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A2AD81D288989C900B1E609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2AD7FE288989C600B1E609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2AD805288989C600B1E609;
+			remoteInfo = XTNotebook;
+		};
+		0A2AD827288989C900B1E609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2AD7FE288989C600B1E609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2AD805288989C600B1E609;
+			remoteInfo = XTNotebook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03589A9289222A445D96310C /* Pods-XTNotebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebookTests.debug.xcconfig"; path = "Target Support Files/Pods-XTNotebookTests/Pods-XTNotebookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A2AD806288989C600B1E609 /* XTNotebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTNotebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2AD809288989C700B1E609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A2AD80B288989C700B1E609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A2AD80D288989C700B1E609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A2AD810288989C700B1E609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A2AD812288989C800B1E609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A2AD815288989C800B1E609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A2AD817288989C800B1E609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2AD81C288989C900B1E609 /* XTNotebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTNotebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2AD820288989C900B1E609 /* XTNotebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTNotebookTests.swift; sourceTree = "<group>"; };
+		0A2AD826288989C900B1E609 /* XTNotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTNotebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2AD82A288989C900B1E609 /* XTNotebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTNotebookUITests.swift; sourceTree = "<group>"; };
+		0A2AD82C288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTNotebookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A2B57A12892BE7D002B61B7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0A2B57A32892BEC6002B61B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0A2B57A42892BEC6002B61B7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0A2B57A72892C305002B61B7 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		0A2B57A82892C305002B61B7 /* EditNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditNoteViewController.xib; sourceTree = "<group>"; };
+		0A37629D28A4DE1200858147 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		0A37629E28A4DE1200858147 /* NoteDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
+		0AAA91E128937E64001714E0 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		0AAA91E32893E344001714E0 /* WCDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCDBManager.swift; sourceTree = "<group>"; };
+		45C721B03327DF5ACFD6CDD1 /* Pods-XTNotebookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebookTests.release.xcconfig"; path = "Target Support Files/Pods-XTNotebookTests/Pods-XTNotebookTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0C93910B21B115E16D53EBB /* Pods_XTNotebook_XTNotebookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTNotebook_XTNotebookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A844E8A8B3AF374EC76F03D6 /* Pods_XTNotebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTNotebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1473979C37EB707AB029E9 /* Pods_XTNotebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTNotebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22FDE8C9A7468D7D0BDF8BA /* Pods-XTNotebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook.release.xcconfig"; path = "Target Support Files/Pods-XTNotebook/Pods-XTNotebook.release.xcconfig"; sourceTree = "<group>"; };
+		DBF2D9D0BC74591D1E971F31 /* Pods-XTNotebook-XTNotebookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook-XTNotebookUITests.debug.xcconfig"; path = "Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E49C586984CFD4F6A308BD5E /* Pods-XTNotebook-XTNotebookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook-XTNotebookUITests.release.xcconfig"; path = "Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC37D7E0D391B208E3BCDC00 /* Pods-XTNotebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook.debug.xcconfig"; path = "Target Support Files/Pods-XTNotebook/Pods-XTNotebook.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A2AD803288989C600B1E609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839C36353CDDBB504C8144E8 /* Pods_XTNotebook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2AD819288989C900B1E609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F6C1299986E10742504D0B /* Pods_XTNotebookTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2AD823288989C900B1E609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F4FE286B7B91B0C324874A /* Pods_XTNotebook_XTNotebookUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2AD7FD288989C600B1E609 = {
+			isa = PBXGroup;
+			children = (
+				0A2AD808288989C600B1E609 /* XTNotebook */,
+				0A2AD81F288989C900B1E609 /* XTNotebookTests */,
+				0A2AD829288989C900B1E609 /* XTNotebookUITests */,
+				0A2AD807288989C600B1E609 /* Products */,
+				D5F9E82EA9E9EBB098DA031C /* Pods */,
+				15BE1DB9E7E9BA3A58A87B35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A2AD807288989C600B1E609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A2AD806288989C600B1E609 /* XTNotebook.app */,
+				0A2AD81C288989C900B1E609 /* XTNotebookTests.xctest */,
+				0A2AD826288989C900B1E609 /* XTNotebookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A2AD808288989C600B1E609 /* XTNotebook */ = {
+			isa = PBXGroup;
+			children = (
+				0A2AD809288989C700B1E609 /* AppDelegate.swift */,
+				0A2B57A02892BE09002B61B7 /* Base */,
+				0A2B579F2892BE09002B61B7 /* Main */,
+				0A2AD80B288989C700B1E609 /* SceneDelegate.swift */,
+				0A2AD80D288989C700B1E609 /* ViewController.swift */,
+				0A2AD80F288989C700B1E609 /* Main.storyboard */,
+				0A2AD812288989C800B1E609 /* Assets.xcassets */,
+				0A2AD814288989C800B1E609 /* LaunchScreen.storyboard */,
+				0A2AD817288989C800B1E609 /* Info.plist */,
+			);
+			path = XTNotebook;
+			sourceTree = "<group>";
+		};
+		0A2AD81F288989C900B1E609 /* XTNotebookTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A2AD820288989C900B1E609 /* XTNotebookTests.swift */,
+			);
+			path = XTNotebookTests;
+			sourceTree = "<group>";
+		};
+		0A2AD829288989C900B1E609 /* XTNotebookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A2AD82A288989C900B1E609 /* XTNotebookUITests.swift */,
+				0A2AD82C288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift */,
+			);
+			path = XTNotebookUITests;
+			sourceTree = "<group>";
+		};
+		0A2B579F2892BE09002B61B7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA91E028937E4B001714E0 /* Model */,
+				0AAA91DF28937E4B001714E0 /* Views */,
+				0A2B57A32892BEC6002B61B7 /* MainViewController.swift */,
+				0A2B57A42892BEC6002B61B7 /* MainViewController.xib */,
+				0A2B57A72892C305002B61B7 /* EditNoteViewController.swift */,
+				0A2B57A82892C305002B61B7 /* EditNoteViewController.xib */,
+				0A37629D28A4DE1200858147 /* NoteDetailViewController.swift */,
+				0A37629E28A4DE1200858147 /* NoteDetailViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0A2B57A02892BE09002B61B7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A2B57A12892BE7D002B61B7 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0AAA91DF28937E4B001714E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0AAA91E028937E4B001714E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA91E128937E64001714E0 /* NoteModel.swift */,
+				0AAA91E32893E344001714E0 /* WCDBManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15BE1DB9E7E9BA3A58A87B35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A844E8A8B3AF374EC76F03D6 /* Pods_XTNotebook.framework */,
+				A0C93910B21B115E16D53EBB /* Pods_XTNotebook_XTNotebookUITests.framework */,
+				AC1473979C37EB707AB029E9 /* Pods_XTNotebookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5F9E82EA9E9EBB098DA031C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC37D7E0D391B208E3BCDC00 /* Pods-XTNotebook.debug.xcconfig */,
+				C22FDE8C9A7468D7D0BDF8BA /* Pods-XTNotebook.release.xcconfig */,
+				DBF2D9D0BC74591D1E971F31 /* Pods-XTNotebook-XTNotebookUITests.debug.xcconfig */,
+				E49C586984CFD4F6A308BD5E /* Pods-XTNotebook-XTNotebookUITests.release.xcconfig */,
+				03589A9289222A445D96310C /* Pods-XTNotebookTests.debug.xcconfig */,
+				45C721B03327DF5ACFD6CDD1 /* Pods-XTNotebookTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A2AD805288989C600B1E609 /* XTNotebook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2AD830288989C900B1E609 /* Build configuration list for PBXNativeTarget "XTNotebook" */;
+			buildPhases = (
+				831156988EE393A26729F378 /* [CP] Check Pods Manifest.lock */,
+				0A2AD802288989C600B1E609 /* Sources */,
+				0A2AD803288989C600B1E609 /* Frameworks */,
+				0A2AD804288989C600B1E609 /* Resources */,
+				C682FC725F91F842D95A9E25 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTNotebook;
+			productName = XTNotebook;
+			productReference = 0A2AD806288989C600B1E609 /* XTNotebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A2AD81B288989C900B1E609 /* XTNotebookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2AD833288989C900B1E609 /* Build configuration list for PBXNativeTarget "XTNotebookTests" */;
+			buildPhases = (
+				E932A942223A3C788648146B /* [CP] Check Pods Manifest.lock */,
+				0A2AD818288989C900B1E609 /* Sources */,
+				0A2AD819288989C900B1E609 /* Frameworks */,
+				0A2AD81A288989C900B1E609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A2AD81E288989C900B1E609 /* PBXTargetDependency */,
+			);
+			name = XTNotebookTests;
+			productName = XTNotebookTests;
+			productReference = 0A2AD81C288989C900B1E609 /* XTNotebookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A2AD825288989C900B1E609 /* XTNotebookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2AD836288989C900B1E609 /* Build configuration list for PBXNativeTarget "XTNotebookUITests" */;
+			buildPhases = (
+				1D0A7FE2BDBBC18C843C9794 /* [CP] Check Pods Manifest.lock */,
+				0A2AD822288989C900B1E609 /* Sources */,
+				0A2AD823288989C900B1E609 /* Frameworks */,
+				0A2AD824288989C900B1E609 /* Resources */,
+				8E7B86D88A1E0D1CA2BD82A7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A2AD828288989C900B1E609 /* PBXTargetDependency */,
+			);
+			name = XTNotebookUITests;
+			productName = XTNotebookUITests;
+			productReference = 0A2AD826288989C900B1E609 /* XTNotebookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A2AD7FE288989C600B1E609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					0A2AD805288989C600B1E609 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					0A2AD81B288989C900B1E609 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 0A2AD805288989C600B1E609;
+					};
+					0A2AD825288989C900B1E609 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 0A2AD805288989C600B1E609;
+					};
+				};
+			};
+			buildConfigurationList = 0A2AD801288989C600B1E609 /* Build configuration list for PBXProject "XTNotebook" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A2AD7FD288989C600B1E609;
+			productRefGroup = 0A2AD807288989C600B1E609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A2AD805288989C600B1E609 /* XTNotebook */,
+				0A2AD81B288989C900B1E609 /* XTNotebookTests */,
+				0A2AD825288989C900B1E609 /* XTNotebookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A2AD804288989C600B1E609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2AD816288989C800B1E609 /* LaunchScreen.storyboard in Resources */,
+				0A2B57AA2892C305002B61B7 /* EditNoteViewController.xib in Resources */,
+				0A2AD813288989C800B1E609 /* Assets.xcassets in Resources */,
+				0A2AD811288989C700B1E609 /* Main.storyboard in Resources */,
+				0A2B57A62892BEC6002B61B7 /* MainViewController.xib in Resources */,
+				0A3762A028A4DE1200858147 /* NoteDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2AD81A288989C900B1E609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2AD824288989C900B1E609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D0A7FE2BDBBC18C843C9794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XTNotebook-XTNotebookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		831156988EE393A26729F378 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XTNotebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E7B86D88A1E0D1CA2BD82A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C682FC725F91F842D95A9E25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XTNotebook/Pods-XTNotebook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XTNotebook/Pods-XTNotebook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XTNotebook/Pods-XTNotebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E932A942223A3C788648146B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XTNotebookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A2AD802288989C600B1E609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2AD80E288989C700B1E609 /* ViewController.swift in Sources */,
+				0A2B57A22892BE7D002B61B7 /* BaseViewController.swift in Sources */,
+				0A37629F28A4DE1200858147 /* NoteDetailViewController.swift in Sources */,
+				0A2AD80A288989C700B1E609 /* AppDelegate.swift in Sources */,
+				0AAA91E228937E64001714E0 /* NoteModel.swift in Sources */,
+				0A2AD80C288989C700B1E609 /* SceneDelegate.swift in Sources */,
+				0A2B57A92892C305002B61B7 /* EditNoteViewController.swift in Sources */,
+				0A2B57A52892BEC6002B61B7 /* MainViewController.swift in Sources */,
+				0AAA91E42893E344001714E0 /* WCDBManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2AD818288989C900B1E609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2AD821288989C900B1E609 /* XTNotebookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2AD822288989C900B1E609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2AD82B288989C900B1E609 /* XTNotebookUITests.swift in Sources */,
+				0A2AD82D288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A2AD81E288989C900B1E609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2AD805288989C600B1E609 /* XTNotebook */;
+			targetProxy = 0A2AD81D288989C900B1E609 /* PBXContainerItemProxy */;
+		};
+		0A2AD828288989C900B1E609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2AD805288989C600B1E609 /* XTNotebook */;
+			targetProxy = 0A2AD827288989C900B1E609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A2AD80F288989C700B1E609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2AD810288989C700B1E609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A2AD814288989C800B1E609 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2AD815288989C800B1E609 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A2AD82E288989C900B1E609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A2AD82F288989C900B1E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A2AD831288989C900B1E609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC37D7E0D391B208E3BCDC00 /* Pods-XTNotebook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26DHM976MG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XTNotebook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enableClass-student.www.XTNotebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A2AD832288989C900B1E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C22FDE8C9A7468D7D0BDF8BA /* Pods-XTNotebook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26DHM976MG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XTNotebook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enableClass-student.www.XTNotebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A2AD834288989C900B1E609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03589A9289222A445D96310C /* Pods-XTNotebookTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26DHM976MG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enableClass-student.www.XTNotebookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTNotebook.app/XTNotebook";
+			};
+			name = Debug;
+		};
+		0A2AD835288989C900B1E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C721B03327DF5ACFD6CDD1 /* Pods-XTNotebookTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26DHM976MG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enableClass-student.www.XTNotebookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTNotebook.app/XTNotebook";
+			};
+			name = Release;
+		};
+		0A2AD837288989C900B1E609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF2D9D0BC74591D1E971F31 /* Pods-XTNotebook-XTNotebookUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26DHM976MG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enableClass-student.www.XTNotebookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XTNotebook;
+			};
+			name = Debug;
+		};
+		0A2AD838288989C900B1E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49C586984CFD4F6A308BD5E /* Pods-XTNotebook-XTNotebookUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26DHM976MG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enableClass-student.www.XTNotebookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XTNotebook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A2AD801288989C600B1E609 /* Build configuration list for PBXProject "XTNotebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2AD82E288989C900B1E609 /* Debug */,
+				0A2AD82F288989C900B1E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2AD830288989C900B1E609 /* Build configuration list for PBXNativeTarget "XTNotebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2AD831288989C900B1E609 /* Debug */,
+				0A2AD832288989C900B1E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2AD833288989C900B1E609 /* Build configuration list for PBXNativeTarget "XTNotebookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2AD834288989C900B1E609 /* Debug */,
+				0A2AD835288989C900B1E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2AD836288989C900B1E609 /* Build configuration list for PBXNativeTarget "XTNotebookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2AD837288989C900B1E609 /* Debug */,
+				0A2AD838288989C900B1E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A2AD7FE288989C600B1E609 /* Project object */;
+}

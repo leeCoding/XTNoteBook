@@ -1,0 +1,6 @@
+framework module Pods_XTNotebook_XTNotebookUITests {
+  umbrella header "Pods-XTNotebook-XTNotebookUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
