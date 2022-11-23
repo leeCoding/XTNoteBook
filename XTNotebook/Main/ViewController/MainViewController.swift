@@ -8,47 +8,8 @@
 import UIKit
 import SnapKit
 
-class MainViewController: BaseViewController, UITableViewDataSource,UITableViewDelegate, EditNoteViewcontrollerDelegate{
-        
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _models.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if cell == nil{
-            cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell");
-        }
-        
-        let noteModel = _models[indexPath.row]
-        cell?.textLabel?.text = noteModel.title;
-        
-        debugPrint(noteModel.title)
-        return cell!
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print("\(indexPath.row)")
-        let noteModel = _models[indexPath.row]
-        let vc = EditNoteViewController()
-        vc.noteModel = noteModel
-        vc.isEdit = true
-        self.present(vc, animated: true)
-        
-        
-    }
-    
-    func callBack(_ content: String) {
-
-        print("callBack == \(content)")
-        
-        getAllObjects()
-    
-    }
-    
-    
+class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate,EditNoteViewcontrollerDelegate {
+                
     var _tableView : UITableView!
 
     var _models : [NoteModel] = [NoteModel]()
@@ -56,7 +17,17 @@ class MainViewController: BaseViewController, UITableViewDataSource,UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+     
+        RequestManager.postRequest { result in
+            switch result {
+            case .success(let model):
+                print("成功 == \(model)")
+            
+            case .failure(let error):
+                print("失败 == \(error)")
+            }
         
+        }
         configUI()
     }
     
@@ -108,4 +79,54 @@ class MainViewController: BaseViewController, UITableViewDataSource,UITableViewD
         _tableView.reloadData();
     }
 
+}
+
+// MARK: UITableViewDataSource
+extension MainViewController {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return _models.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if cell == nil{
+            cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell");
+        }
+        
+        let noteModel = _models[indexPath.row]
+        cell?.textLabel?.text = noteModel.title;
+        
+        debugPrint(noteModel.title)
+        return cell!
+    }
+    
+}
+
+
+extension MainViewController {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("\(indexPath.row)")
+        let noteModel = _models[indexPath.row]
+        let vc = EditNoteViewController()
+        vc.noteModel = noteModel
+        vc.isEdit = true
+        self.present(vc, animated: true)
+        
+        
+    }
+}
+
+extension MainViewController {
+    
+    func callBack(_ content: String) {
+
+        print("callBack == \(content)")
+        
+        getAllObjects()
+    
+    }
 }

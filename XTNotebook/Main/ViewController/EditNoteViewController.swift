@@ -97,7 +97,6 @@ class EditNoteViewController: BaseViewController, UITextViewDelegate {
                 // 插入数据库
                 WCDBManager.manager.insertDB(object: [noteModel], intotable: noteModelTableName)
                 
-                
             }
         }
 

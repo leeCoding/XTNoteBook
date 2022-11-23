@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.2)
+  - HandyJSON (5.0.2)
   - IQKeyboardManagerSwift (6.5.10)
   - Kingfisher (7.3.2)
   - R.swift (6.1.0):
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - HandyJSON
   - IQKeyboardManagerSwift (~> 6.5.10)
   - Kingfisher
   - R.swift
@@ -24,6 +26,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - HandyJSON
     - IQKeyboardManagerSwift
     - Kingfisher
     - R.swift
@@ -35,6 +38,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
@@ -44,6 +48,6 @@ SPEC CHECKSUMS:
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: e1c2e4bcf7e1a6145a927c758a84acda679d30b2
+PODFILE CHECKSUM: e2da70802d9a669b9be8106e85cc1162bf269c17
 
 COCOAPODS: 1.11.3

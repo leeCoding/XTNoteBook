@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         // Do any additional setup after loading the view.
         
         configUI()
+        
     }
     
     func configUI() {

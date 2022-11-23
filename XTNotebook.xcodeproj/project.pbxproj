@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		05F4FE286B7B91B0C324874A /* Pods_XTNotebook_XTNotebookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C93910B21B115E16D53EBB /* Pods_XTNotebook_XTNotebookUITests.framework */; };
+		0A28054E28AB75C2003A2CCB /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28054728AB75C2003A2CCB /* EditNoteViewController.swift */; };
+		0A28054F28AB75C2003A2CCB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A28054828AB75C2003A2CCB /* MainViewController.xib */; };
+		0A28055028AB75C2003A2CCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28054928AB75C2003A2CCB /* MainViewController.swift */; };
+		0A28055128AB75C2003A2CCB /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A28054A28AB75C2003A2CCB /* NoteDetailViewController.xib */; };
+		0A28055228AB75C2003A2CCB /* EditNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A28054B28AB75C2003A2CCB /* EditNoteViewController.xib */; };
+		0A28055328AB75C2003A2CCB /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28054C28AB75C2003A2CCB /* NoteDetailViewController.swift */; };
+		0A28055528AB7625003A2CCB /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28055428AB7625003A2CCB /* RequestManager.swift */; };
 		0A2AD80A288989C700B1E609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD809288989C700B1E609 /* AppDelegate.swift */; };
 		0A2AD80C288989C700B1E609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD80B288989C700B1E609 /* SceneDelegate.swift */; };
 		0A2AD80E288989C700B1E609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD80D288989C700B1E609 /* ViewController.swift */; };
@@ -18,12 +25,6 @@
 		0A2AD82B288989C900B1E609 /* XTNotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD82A288989C900B1E609 /* XTNotebookUITests.swift */; };
 		0A2AD82D288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2AD82C288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift */; };
 		0A2B57A22892BE7D002B61B7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B57A12892BE7D002B61B7 /* BaseViewController.swift */; };
-		0A2B57A52892BEC6002B61B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B57A32892BEC6002B61B7 /* MainViewController.swift */; };
-		0A2B57A62892BEC6002B61B7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2B57A42892BEC6002B61B7 /* MainViewController.xib */; };
-		0A2B57A92892C305002B61B7 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B57A72892C305002B61B7 /* EditNoteViewController.swift */; };
-		0A2B57AA2892C305002B61B7 /* EditNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2B57A82892C305002B61B7 /* EditNoteViewController.xib */; };
-		0A37629F28A4DE1200858147 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A37629D28A4DE1200858147 /* NoteDetailViewController.swift */; };
-		0A3762A028A4DE1200858147 /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A37629E28A4DE1200858147 /* NoteDetailViewController.xib */; };
 		0AAA91E228937E64001714E0 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA91E128937E64001714E0 /* NoteModel.swift */; };
 		0AAA91E42893E344001714E0 /* WCDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA91E32893E344001714E0 /* WCDBManager.swift */; };
 		839C36353CDDBB504C8144E8 /* Pods_XTNotebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A844E8A8B3AF374EC76F03D6 /* Pods_XTNotebook.framework */; };
@@ -49,6 +50,13 @@
 
 /* Begin PBXFileReference section */
 		03589A9289222A445D96310C /* Pods-XTNotebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebookTests.debug.xcconfig"; path = "Target Support Files/Pods-XTNotebookTests/Pods-XTNotebookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A28054728AB75C2003A2CCB /* EditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		0A28054828AB75C2003A2CCB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		0A28054928AB75C2003A2CCB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0A28054A28AB75C2003A2CCB /* NoteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
+		0A28054B28AB75C2003A2CCB /* EditNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditNoteViewController.xib; sourceTree = "<group>"; };
+		0A28054C28AB75C2003A2CCB /* NoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		0A28055428AB7625003A2CCB /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		0A2AD806288989C600B1E609 /* XTNotebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTNotebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2AD809288989C700B1E609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A2AD80B288989C700B1E609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,12 +71,6 @@
 		0A2AD82A288989C900B1E609 /* XTNotebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTNotebookUITests.swift; sourceTree = "<group>"; };
 		0A2AD82C288989C900B1E609 /* XTNotebookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTNotebookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A2B57A12892BE7D002B61B7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		0A2B57A32892BEC6002B61B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		0A2B57A42892BEC6002B61B7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		0A2B57A72892C305002B61B7 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
-		0A2B57A82892C305002B61B7 /* EditNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditNoteViewController.xib; sourceTree = "<group>"; };
-		0A37629D28A4DE1200858147 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
-		0A37629E28A4DE1200858147 /* NoteDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
 		0AAA91E128937E64001714E0 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		0AAA91E32893E344001714E0 /* WCDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCDBManager.swift; sourceTree = "<group>"; };
 		45C721B03327DF5ACFD6CDD1 /* Pods-XTNotebookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebookTests.release.xcconfig"; path = "Target Support Files/Pods-XTNotebookTests/Pods-XTNotebookTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A28054628AB75C2003A2CCB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A28054728AB75C2003A2CCB /* EditNoteViewController.swift */,
+				0A28054828AB75C2003A2CCB /* MainViewController.xib */,
+				0A28054928AB75C2003A2CCB /* MainViewController.swift */,
+				0A28054A28AB75C2003A2CCB /* NoteDetailViewController.xib */,
+				0A28054B28AB75C2003A2CCB /* EditNoteViewController.xib */,
+				0A28054C28AB75C2003A2CCB /* NoteDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0A28054D28AB75C2003A2CCB /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
 		0A2AD7FD288989C600B1E609 = {
 			isa = PBXGroup;
 			children = (
@@ -167,14 +189,10 @@
 		0A2B579F2892BE09002B61B7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0A28054D28AB75C2003A2CCB /* ModelView */,
+				0A28054628AB75C2003A2CCB /* ViewController */,
 				0AAA91E028937E4B001714E0 /* Model */,
 				0AAA91DF28937E4B001714E0 /* Views */,
-				0A2B57A32892BEC6002B61B7 /* MainViewController.swift */,
-				0A2B57A42892BEC6002B61B7 /* MainViewController.xib */,
-				0A2B57A72892C305002B61B7 /* EditNoteViewController.swift */,
-				0A2B57A82892C305002B61B7 /* EditNoteViewController.xib */,
-				0A37629D28A4DE1200858147 /* NoteDetailViewController.swift */,
-				0A37629E28A4DE1200858147 /* NoteDetailViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -183,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				0A2B57A12892BE7D002B61B7 /* BaseViewController.swift */,
+				0A28055428AB7625003A2CCB /* RequestManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -336,11 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A2AD816288989C800B1E609 /* LaunchScreen.storyboard in Resources */,
-				0A2B57AA2892C305002B61B7 /* EditNoteViewController.xib in Resources */,
 				0A2AD813288989C800B1E609 /* Assets.xcassets in Resources */,
 				0A2AD811288989C700B1E609 /* Main.storyboard in Resources */,
-				0A2B57A62892BEC6002B61B7 /* MainViewController.xib in Resources */,
-				0A3762A028A4DE1200858147 /* NoteDetailViewController.xib in Resources */,
+				0A28054F28AB75C2003A2CCB /* MainViewController.xib in Resources */,
+				0A28055228AB75C2003A2CCB /* EditNoteViewController.xib in Resources */,
+				0A28055128AB75C2003A2CCB /* NoteDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,13 +489,14 @@
 			files = (
 				0A2AD80E288989C700B1E609 /* ViewController.swift in Sources */,
 				0A2B57A22892BE7D002B61B7 /* BaseViewController.swift in Sources */,
-				0A37629F28A4DE1200858147 /* NoteDetailViewController.swift in Sources */,
+				0A28055328AB75C2003A2CCB /* NoteDetailViewController.swift in Sources */,
 				0A2AD80A288989C700B1E609 /* AppDelegate.swift in Sources */,
+				0A28054E28AB75C2003A2CCB /* EditNoteViewController.swift in Sources */,
+				0A28055528AB7625003A2CCB /* RequestManager.swift in Sources */,
 				0AAA91E228937E64001714E0 /* NoteModel.swift in Sources */,
 				0A2AD80C288989C700B1E609 /* SceneDelegate.swift in Sources */,
-				0A2B57A92892C305002B61B7 /* EditNoteViewController.swift in Sources */,
-				0A2B57A52892BEC6002B61B7 /* MainViewController.swift in Sources */,
 				0AAA91E42893E344001714E0 /* WCDBManager.swift in Sources */,
+				0A28055028AB75C2003A2CCB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
