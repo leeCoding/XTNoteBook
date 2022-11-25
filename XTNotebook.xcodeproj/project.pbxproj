@@ -29,6 +29,8 @@
 		0AAA91E42893E344001714E0 /* WCDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA91E32893E344001714E0 /* WCDBManager.swift */; };
 		839C36353CDDBB504C8144E8 /* Pods_XTNotebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A844E8A8B3AF374EC76F03D6 /* Pods_XTNotebook.framework */; };
 		84F6C1299986E10742504D0B /* Pods_XTNotebookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1473979C37EB707AB029E9 /* Pods_XTNotebookTests.framework */; };
+		B20EAD1C2930A55400B02CF9 /* XTTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EAD1A2930A55400B02CF9 /* XTTitleTableViewCell.swift */; };
+		B20EAD1D2930A55400B02CF9 /* XTTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20EAD1B2930A55400B02CF9 /* XTTitleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		A0C93910B21B115E16D53EBB /* Pods_XTNotebook_XTNotebookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTNotebook_XTNotebookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A844E8A8B3AF374EC76F03D6 /* Pods_XTNotebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTNotebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1473979C37EB707AB029E9 /* Pods_XTNotebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTNotebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20EAD1A2930A55400B02CF9 /* XTTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTTitleTableViewCell.swift; sourceTree = "<group>"; };
+		B20EAD1B2930A55400B02CF9 /* XTTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XTTitleTableViewCell.xib; sourceTree = "<group>"; };
 		C22FDE8C9A7468D7D0BDF8BA /* Pods-XTNotebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook.release.xcconfig"; path = "Target Support Files/Pods-XTNotebook/Pods-XTNotebook.release.xcconfig"; sourceTree = "<group>"; };
 		DBF2D9D0BC74591D1E971F31 /* Pods-XTNotebook-XTNotebookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook-XTNotebookUITests.debug.xcconfig"; path = "Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E49C586984CFD4F6A308BD5E /* Pods-XTNotebook-XTNotebookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook-XTNotebookUITests.release.xcconfig"; path = "Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 		0AAA91DF28937E4B001714E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B20EAD1A2930A55400B02CF9 /* XTTitleTableViewCell.swift */,
+				B20EAD1B2930A55400B02CF9 /* XTTitleTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				0A28054F28AB75C2003A2CCB /* MainViewController.xib in Resources */,
 				0A28055228AB75C2003A2CCB /* EditNoteViewController.xib in Resources */,
 				0A28055128AB75C2003A2CCB /* NoteDetailViewController.xib in Resources */,
+				B20EAD1D2930A55400B02CF9 /* XTTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +496,7 @@
 			files = (
 				0A2AD80E288989C700B1E609 /* ViewController.swift in Sources */,
 				0A2B57A22892BE7D002B61B7 /* BaseViewController.swift in Sources */,
+				B20EAD1C2930A55400B02CF9 /* XTTitleTableViewCell.swift in Sources */,
 				0A28055328AB75C2003A2CCB /* NoteDetailViewController.swift in Sources */,
 				0A2AD80A288989C700B1E609 /* AppDelegate.swift in Sources */,
 				0A28054E28AB75C2003A2CCB /* EditNoteViewController.swift in Sources */,

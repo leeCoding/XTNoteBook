@@ -18,6 +18,7 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
         super.viewDidLoad()
         // Do any additional setup after loading the view.
      
+        /*
         RequestManager.postRequest { result in
             switch result {
             case .success(let model):
@@ -28,6 +29,8 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
             }
         
         }
+        */
+        
         configUI()
     }
     
@@ -50,9 +53,7 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
         _tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        _tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell");
-        
-        print("add content")
+        _tableView.register(UINib.init(nibName: "XTTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
             
         createUserTable()
         
@@ -61,7 +62,6 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
 
     @objc func addNote() {
         
-        debugPrint("添加笔记")
         let vc = EditNoteViewController();
         vc.delegate = self;
         self.navigationController?.present(vc, animated: true)
@@ -90,20 +90,14 @@ extension MainViewController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if cell == nil{
-            cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell");
-        }
-        
+        let cell: XTTitleTableViewCell? = (tableView.dequeueReusableCell(withIdentifier: "cell") as! XTTitleTableViewCell)
         let noteModel = _models[indexPath.row]
-        cell?.textLabel?.text = noteModel.title;
+        cell?.loadModel(model: noteModel)
         
-        debugPrint(noteModel.title)
         return cell!
     }
     
 }
-
 
 extension MainViewController {
     
@@ -116,15 +110,12 @@ extension MainViewController {
         vc.isEdit = true
         self.present(vc, animated: true)
         
-        
     }
 }
 
 extension MainViewController {
     
     func callBack(_ content: String) {
-
-        print("callBack == \(content)")
         
         getAllObjects()
     
