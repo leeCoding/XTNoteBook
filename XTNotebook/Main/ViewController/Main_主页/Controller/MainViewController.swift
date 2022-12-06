@@ -51,36 +51,26 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
         _tableView.delegate = self
         _tableView.dataSource = self
         _tableView.rowHeight = 70;
-        _tableView.backgroundColor = .brown;
         view.addSubview(_tableView)
         
         _tableView.register(UINib.init(nibName: "XTTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
             
         // 文件夹
         let directryBtn = UIButton.init(type: .contactAdd)
-//        directryBtn.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
         directryBtn.setTitleColor(UIColor.blue, for: .normal)
-        directryBtn.backgroundColor = UIColor.green
         self.view.addSubview(directryBtn)
         
         directryBtn.addTarget(self, action: #selector(addDirectry), for: .touchUpInside)
         
-        let label = UILabel.init()
-        label.backgroundColor = UIColor.gray
-        label.text = "alalalalalalalalalal";
-        view.addSubview(label)
-        
-
         _tableView.snp.makeConstraints { make in
             make.left.right.top.equalTo(view)
-            make.bottom.equalTo(label.snp_topMargin)
+            make.bottom.equalTo(directryBtn.snp.top)
         }
         
-        label.snp.makeConstraints { make in
+        directryBtn.snp.makeConstraints { make in
             make.left.equalTo(view.snp_leftMargin).offset(0)
             make.bottom.equalTo(view.snp_bottomMargin)
-//            make.width.height.equalTo(44)
-//            make.top.equalTo(_tableView.snp_bottomMargin)
+            make.size.equalTo(CGSize(width: 44, height: 44))
         }
         
         createUserTable()
