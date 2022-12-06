@@ -1,11 +1,9 @@
 PODS:
-  - Alamofire (5.6.2)
+  - Alamofire (5.6.4)
   - HandyJSON (5.0.2)
   - IQKeyboardManagerSwift (6.5.10)
-  - Kingfisher (7.3.2)
-  - R.swift (6.1.0):
-    - R.swift.Library (~> 5.3.0)
-  - R.swift.Library (5.3.0)
+  - Kingfisher (7.4.1)
+  - R.swift (7.0.1)
   - SnapKit (5.6.0)
   - SQLiteRepairKit (1.2.2):
     - WCDBOptimizedSQLCipher (~> 1.2.0)
@@ -21,7 +19,7 @@ DEPENDENCIES:
   - Kingfisher
   - R.swift
   - SnapKit
-  - WCDB.swift (~> 1.0.8.2)
+  - WCDB.swift
 
 SPEC REPOS:
   trunk:
@@ -30,24 +28,22 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Kingfisher
     - R.swift
-    - R.swift.Library
     - SnapKit
     - SQLiteRepairKit
     - WCDB.swift
     - WCDBOptimizedSQLCipher
 
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
-  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
-  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
-  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  R.swift: 30096a13394e3e0449d0d00c74185e4523e83d8c
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: e2da70802d9a669b9be8106e85cc1162bf269c17
+PODFILE CHECKSUM: 6ddaea9dcaae1cfc7cf48395c2d99c881af09b52
 
 COCOAPODS: 1.11.3

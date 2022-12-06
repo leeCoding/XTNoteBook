@@ -12,27 +12,26 @@ let noteModelTableName  = "NoteModel"
 
 class NoteModel: TableCodable {
     
-    var identifier: Int? = nil
+    var identifier : Int? = nil
     var title : String = ""
     var content : String = ""
     var date : String = ""
-
-    required init(){}
+    //required init(){}
 
     enum CodingKeys : String,CodingTableKey {
         
-        static var objectRelationalMapping = TableBinding(CodingKeys.self)
         typealias Root = NoteModel
-
+        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        
+        case identifier
         case title
         case content
         case date
+        
+        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+            return [identifier:ColumnConstraintBinding(isPrimary: true,isAutoIncrement: true)]
+        }
+        
     }
-
-    static let objectRelatingMapping = TableBinding(CodingKeys.self)
-
-    static var columnConstraintBindings : [CodingKeys: ColumnConstraintBinding]? {
-        return [.date:ColumnConstraintBinding(isPrimary:true,isAutoIncrement:false)]
-    }
-
+    
 }

@@ -26,7 +26,7 @@ class WCDBManager: NSObject {
     }
 
     func createdDB() -> Database {
-        
+        print(dbFile)
         return Database.init(withFileURL: dbFile)
     }
     
@@ -40,7 +40,7 @@ class WCDBManager: NSObject {
     
     func insertDB<T:TableCodable>(object:[T], intotable table:String) {
         do {
-            try dataBase?.insert(objects: object, intoTable: table)
+            try dataBase?.insertOrReplace(objects: object, intoTable: table)
         } catch let error {
             debugPrint("插入表错误\(error.localizedDescription)")
         }
@@ -68,5 +68,13 @@ class WCDBManager: NSObject {
         }
     }
     
+    func deleteFromDB(tableName:String,where condition:Condition?=nil) {
+        do{
+            try dataBase?.delete(fromTable: tableName ,where: condition)
+        }catch let error {
+            debugPrint("删除错误\(error.localizedDescription)")
+        }
+        
+    }
     
 }
