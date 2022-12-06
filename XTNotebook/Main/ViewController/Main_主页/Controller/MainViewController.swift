@@ -53,7 +53,7 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
         _tableView.rowHeight = 70;
         view.addSubview(_tableView)
         
-        _tableView.register(UINib.init(nibName: "XTTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        _tableView.register(UINib.init(nibName: "DirectryTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
             
         // 文件夹
         let directryBtn = UIButton.init(type: .contactAdd)
@@ -108,14 +108,14 @@ class MainViewController: BaseViewController,UITableViewDataSource,UITableViewDe
 extension MainViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _models.count
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: XTTitleTableViewCell? = (tableView.dequeueReusableCell(withIdentifier: "cell") as! XTTitleTableViewCell)
-        let noteModel = _models[indexPath.row]
-        cell?.loadModel(model: noteModel)
+        let cell: DirectryTableViewCell? = (tableView.dequeueReusableCell(withIdentifier: "cell") as! DirectryTableViewCell)
+        //let noteModel = _models[indexPath.row]
+//        cell?.loadModel(model: noteModel)
         
         return cell!
     }
