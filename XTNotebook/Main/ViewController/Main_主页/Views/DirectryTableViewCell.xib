@@ -24,17 +24,30 @@
                             <constraint firstAttribute="height" constant="32" id="TVj-5d-kj0"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRh-ie-XBz">
+                        <rect key="frame" x="48" y="8" width="212" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ZIS-jJ-Fdf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="23l-vc-MGn"/>
+                    <constraint firstAttribute="trailing" secondItem="bRh-ie-XBz" secondAttribute="trailing" constant="60" id="Wi9-kk-QRd"/>
+                    <constraint firstItem="bRh-ie-XBz" firstAttribute="leading" secondItem="ZIS-jJ-Fdf" secondAttribute="trailing" constant="8" id="Xdc-b9-WZv"/>
                     <constraint firstItem="ZIS-jJ-Fdf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a7I-1T-rqB"/>
+                    <constraint firstAttribute="bottom" secondItem="bRh-ie-XBz" secondAttribute="bottom" constant="8" id="aHL-b1-J6e"/>
+                    <constraint firstItem="bRh-ie-XBz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bxm-PB-3AB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="-58.015267175572518" y="-51.408450704225352"/>
+            <connections>
+                <outlet property="titleLabel" destination="bRh-ie-XBz" id="1HW-Fk-Yur"/>
+            </connections>
+            <point key="canvasLocation" x="-96" y="-51"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="directry" width="32" height="32"/>
+        <image name="directry" width="128" height="128"/>
     </resources>
 </document>

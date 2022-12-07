@@ -26,6 +26,7 @@
 		B20EAD1C2930A55400B02CF9 /* XTTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EAD1A2930A55400B02CF9 /* XTTitleTableViewCell.swift */; };
 		B20EAD1D2930A55400B02CF9 /* XTTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20EAD1B2930A55400B02CF9 /* XTTitleTableViewCell.xib */; };
 		B20EAD2929349E3E00B02CF9 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EAD2829349E3E00B02CF9 /* Tools.swift */; };
+		B210100F294040410020A8E5 /* DirectryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210100E294040410020A8E5 /* DirectryModel.swift */; };
 		B22D2580293F2425004AF937 /* WCDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D2573293F2425004AF937 /* WCDBManager.swift */; };
 		B22D2581293F2425004AF937 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D2574293F2425004AF937 /* NoteModel.swift */; };
 		B22D2586293F2425004AF937 /* XTTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D257E293F2425004AF937 /* XTTitleTableViewCell.swift */; };
@@ -36,6 +37,8 @@
 		B22D259E293F24CC004AF937 /* EditNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22D2594293F24CC004AF937 /* EditNoteViewController.xib */; };
 		B22D25A1293F3258004AF937 /* DirectryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D259F293F3258004AF937 /* DirectryTableViewCell.swift */; };
 		B22D25A2293F3258004AF937 /* DirectryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22D25A0293F3258004AF937 /* DirectryTableViewCell.xib */; };
+		B2631A832940310D00B5CAE6 /* DirectryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2631A812940310D00B5CAE6 /* DirectryDetailViewController.swift */; };
+		B2631A842940310D00B5CAE6 /* DirectryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2631A822940310D00B5CAE6 /* DirectryDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,7 @@
 		B20EAD1A2930A55400B02CF9 /* XTTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTTitleTableViewCell.swift; sourceTree = "<group>"; };
 		B20EAD1B2930A55400B02CF9 /* XTTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XTTitleTableViewCell.xib; sourceTree = "<group>"; };
 		B20EAD2829349E3E00B02CF9 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		B210100E294040410020A8E5 /* DirectryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectryModel.swift; sourceTree = "<group>"; };
 		B22D2573293F2425004AF937 /* WCDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCDBManager.swift; sourceTree = "<group>"; };
 		B22D2574293F2425004AF937 /* NoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		B22D257E293F2425004AF937 /* XTTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTTitleTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		B22D2594293F24CC004AF937 /* EditNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditNoteViewController.xib; sourceTree = "<group>"; };
 		B22D259F293F3258004AF937 /* DirectryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectryTableViewCell.swift; sourceTree = "<group>"; };
 		B22D25A0293F3258004AF937 /* DirectryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectryTableViewCell.xib; sourceTree = "<group>"; };
+		B2631A812940310D00B5CAE6 /* DirectryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectryDetailViewController.swift; sourceTree = "<group>"; };
+		B2631A822940310D00B5CAE6 /* DirectryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectryDetailViewController.xib; sourceTree = "<group>"; };
 		C22FDE8C9A7468D7D0BDF8BA /* Pods-XTNotebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook.release.xcconfig"; path = "Target Support Files/Pods-XTNotebook/Pods-XTNotebook.release.xcconfig"; sourceTree = "<group>"; };
 		DBF2D9D0BC74591D1E971F31 /* Pods-XTNotebook-XTNotebookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook-XTNotebookUITests.debug.xcconfig"; path = "Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E49C586984CFD4F6A308BD5E /* Pods-XTNotebook-XTNotebookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTNotebook-XTNotebookUITests.release.xcconfig"; path = "Target Support Files/Pods-XTNotebook-XTNotebookUITests/Pods-XTNotebook-XTNotebookUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -305,6 +311,7 @@
 		B22D258A293F24CC004AF937 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B210100E294040410020A8E5 /* DirectryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -396,6 +403,8 @@
 		B22D2599293F24CC004AF937 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B2631A812940310D00B5CAE6 /* DirectryDetailViewController.swift */,
+				B2631A822940310D00B5CAE6 /* DirectryDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -531,6 +540,7 @@
 			files = (
 				0A2AD816288989C800B1E609 /* LaunchScreen.storyboard in Resources */,
 				B22D259E293F24CC004AF937 /* EditNoteViewController.xib in Resources */,
+				B2631A842940310D00B5CAE6 /* DirectryDetailViewController.xib in Resources */,
 				B22D259B293F24CC004AF937 /* MainViewController.xib in Resources */,
 				B22D25A2293F3258004AF937 /* DirectryTableViewCell.xib in Resources */,
 				0A2AD813288989C800B1E609 /* Assets.xcassets in Resources */,
@@ -673,7 +683,9 @@
 				B22D2580293F2425004AF937 /* WCDBManager.swift in Sources */,
 				B20EAD2929349E3E00B02CF9 /* Tools.swift in Sources */,
 				0A2AD80A288989C700B1E609 /* AppDelegate.swift in Sources */,
+				B2631A832940310D00B5CAE6 /* DirectryDetailViewController.swift in Sources */,
 				0A28055528AB7625003A2CCB /* RequestManager.swift in Sources */,
+				B210100F294040410020A8E5 /* DirectryModel.swift in Sources */,
 				B22D2581293F2425004AF937 /* NoteModel.swift in Sources */,
 				B22D259D293F24CC004AF937 /* EditNoteViewController.swift in Sources */,
 				0AAA91E228937E64001714E0 /* NoteModel.swift in Sources */,

@@ -18,5 +18,15 @@ extension Date {
         let timeinterval :TimeInterval = self.timeIntervalSince1970
         return timeinterval
     }
+    
+    func get_date() -> String {
+        
+        let date = Date.now
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        let string_date = formatter.string(from: date);
+        return string_date;
+        
+    }
 }
 

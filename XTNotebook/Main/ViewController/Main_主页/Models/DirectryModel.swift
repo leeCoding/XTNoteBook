@@ -1,31 +1,30 @@
 //
-//  NoteModel.swift
+//  DirectryModel.swift
 //  XTNotebook
 //
-//  Created by Li on 2022/7/29.
+//  Created by xc on 2022/12/7.
 //
 
 import UIKit
 import WCDBSwift
 
-let note_model = "NoteModel"
+let directry_model  = "DirectryModel"
 
-class NoteModel: TableCodable {
+
+class DirectryModel: TableCodable {
+
     
-    var identifier : Int? = nil
-    var title : String = ""
-    var content : String = ""
     var date : String = ""
-    //required init(){}
+    var title : String = ""
+    var identifier : Int? = nil
 
     enum CodingKeys : String,CodingTableKey {
         
-        typealias Root = NoteModel
+        typealias Root = DirectryModel
         static let objectRelationalMapping = TableBinding(CodingKeys.self)
         
         case identifier
         case title
-        case content
         case date
         
         static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {

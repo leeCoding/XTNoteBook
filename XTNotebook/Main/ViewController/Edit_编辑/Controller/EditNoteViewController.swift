@@ -84,7 +84,7 @@ class EditNoteViewController: BaseViewController, UITextViewDelegate {
                 print("id = \(String(describing: noteModel.identifier)),更新内容\(String(describing: noteModel.content))")
                 
                 //WCDBManager.manager.updateFromDB(tableName: noteModelTableName, on: [NoteModel.Properties.date,NoteModel.Properties.title,NoteModel.Properties.content], with:noteModel, where: noteModel.identifier)
-                WCDBManager.manager.insertDB(object: [noteModel], intotable: noteModelTableName)
+                WCDBManager.manager.insertDB(object: [noteModel], intotable: note_model)
                 
             }
             
@@ -98,7 +98,7 @@ class EditNoteViewController: BaseViewController, UITextViewDelegate {
                 noteModel.title = self.titleTextField.text ?? "";
                 
                 // 插入数据库
-                WCDBManager.manager.insertDB(object: [noteModel], intotable: noteModelTableName)
+                WCDBManager.manager.insertDB(object: [noteModel], intotable: note_model)
                 
             }
         }
